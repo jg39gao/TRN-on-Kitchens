@@ -1,0 +1,330 @@
+Conda uses environments to load different sets of Python packages
+type conda env list to see the environments availible.
+
++-------------------------------------------------------+
+Initializing TSN with 
+               base model:  BNInception
+Configurations:  
+           input_modality:  RGB
+             num_segments:  8
+               new_length:  1
+         consensus_module:  TRN
+            dropout_ratio:  0.8
+feature_dim(for fc_layer):  1024
+ img_feature_dim（[M]TRN):  256
+          before_softmax:  True
++-------------------------------------------------------+
+            
+we have 1 GPUs found
+  
++-------------------------------------------------------+
+               num_class : 8
+                modality : RGB
+              base_model : BNInception
+              new_length : 1
+          consensus_type : TRN
+         img_feature_dim : 256
+
+                  resume : 
+                  epochs : 2
+             start_epoch : 0
+                      lr : 0.001
+               loss_type : nll
+            weight_decay : 0.0005
+                lr_steps : [30, 60]
+                momentum : 0.9
+              partial_bn : False
+           clip_gradient : 20
+                 dropout : 0.8
+
+              batch_size : 64
+                 workers : 8
+                    gpus : None
+               eval_freq : 1
+              print_freq : 1
++-------------------------------------------------------+
+construct a network named : TRN_epic_RGB_BNInception_TRN_segment8
+******************** TSN parameters:
+<class 'torch.nn.parallel.data_parallel.DataParallel'> has no len() mothod
+-------------------- 230 layers (71 ConvNets) ,Total number of parameters: 35,608,591
+------------------------------
+group: first_conv_weight has 1 params, lr_mult: 1, decay_mult: 1
+group: first_conv_bias has 1 params, lr_mult: 2, decay_mult: 0
+group: normal_weight has 71 params, lr_mult: 1, decay_mult: 1
+group: normal_bias has 71 params, lr_mult: 2, decay_mult: 0
+group: BN scale/shift has 138 params, lr_mult: 1, decay_mult: 0
+******************** count from policies, total parameters: 11,585,832
+TRN initialised 
+
+evalutate= None
+======batch_size= 64
+-------------------- 4762 actions to go...
+-------------------- 1586 actions to go...
+
+ ---------- epoch:0, lr 0.001 ----------  14.July 23:31:06
+begin train(), train_loader  len:75
+input size: torch.Size([64, 24, 224, 224]) (batchsize ,num_segments*new_length* channel (rgb 3, flow 2), [crop_size])
+Traceback (most recent call last):
+  File "main.py", line 84, in <module>
+    main()
+  File "main.py", line 81, in main
+    trnmodel.do_training( ifprint= args.print_training_in_terminal)
+  File "/data/acq18jg/Code/TRN-pytorch/main.py", line 366, in do_training
+    tr_loss= self.train(train_loader,  model, self.criterion, optimizer, epoch, self.log_training, ifprint)
+  File "/data/acq18jg/Code/TRN-pytorch/main.py", line 431, in train
+    output = model(input_var)
+  File "/home/acq18jg/.conda/envs/jupyter-spark/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/acq18jg/.conda/envs/jupyter-spark/lib/python3.6/site-packages/torch/nn/parallel/data_parallel.py", line 150, in forward
+    return self.module(*inputs[0], **kwargs[0])
+  File "/home/acq18jg/.conda/envs/jupyter-spark/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/data/acq18jg/Code/TRN-pytorch/models.py", line 288, in forward
+    base_out = self.base_model(input.view((-1, sample_len) + input.size()[-2:]))
+  File "/home/acq18jg/.conda/envs/jupyter-spark/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/data/acq18jg/Code/TRN-pytorch/model_zoo/bninception/pytorch_load.py", line 78, in forward
+    data_dict[op[2]] = getattr(self, op[0])(data_dict[op[-1]])
+  File "/home/acq18jg/.conda/envs/jupyter-spark/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/acq18jg/.conda/envs/jupyter-spark/lib/python3.6/site-packages/torch/nn/modules/conv.py", line 345, in forward
+    return self.conv2d_forward(input, self.weight)
+  File "/home/acq18jg/.conda/envs/jupyter-spark/lib/python3.6/site-packages/torch/nn/modules/conv.py", line 342, in conv2d_forward
+    self.padding, self.dilation, self.groups)
+RuntimeError: CUDA out of memory. Tried to allocate 98.00 MiB (GPU 0; 11.17 GiB total capacity; 10.76 GiB already allocated; 5.31 MiB free; 10.84 GiB reserved in total by PyTorch)
+Conda uses environments to load different sets of Python packages
+type conda env list to see the environments availible.
+
++-------------------------------------------------------+
+Initializing TSN with 
+               base model:  BNInception
+Configurations:  
+           input_modality:  Flow
+             num_segments:  8
+               new_length:  5
+         consensus_module:  TRN
+            dropout_ratio:  0.8
+feature_dim(for fc_layer):  1024
+ img_feature_dim（[M]TRN):  256
+          before_softmax:  True
++-------------------------------------------------------+
+            
+Converting the ImageNet model to a flow init model
+Done. Flow model ready...
+we have 2 GPUs found
+  
++-------------------------------------------------------+
+               num_class : 8
+                modality : Flow
+              base_model : BNInception
+              new_length : 5
+          consensus_type : TRN
+         img_feature_dim : 256
+
+                  resume : 
+                  epochs : 2
+             start_epoch : 0
+                      lr : 0.001
+               loss_type : nll
+            weight_decay : 0.0005
+                lr_steps : [30, 60]
+                momentum : 0.9
+              partial_bn : False
+           clip_gradient : 20
+                 dropout : 0.8
+
+              batch_size : 64
+                 workers : 8
+                    gpus : None
+               eval_freq : 1
+              print_freq : 1
++-------------------------------------------------------+
+construct a network named : TRN_epic_Flow_BNInception_TRN_segment8
+******************** TSN parameters:
+<class 'torch.nn.parallel.data_parallel.DataParallel'> has no len() mothod
+-------------------- 230 layers (71 ConvNets) ,Total number of parameters: 35,674,447
+------------------------------
+group: first_conv_weight has 1 params, lr_mult: 5, decay_mult: 1
+group: first_conv_bias has 1 params, lr_mult: 10, decay_mult: 0
+group: normal_weight has 71 params, lr_mult: 1, decay_mult: 1
+group: normal_bias has 71 params, lr_mult: 2, decay_mult: 0
+group: BN scale/shift has 138 params, lr_mult: 1, decay_mult: 0
+******************** count from policies, total parameters: 11,607,784
+TRN initialised 
+
+evalutate= None
+======batch_size= 64
+-------------------- 4762 actions to go...
+-------------------- 1586 actions to go...
+
+ ---------- epoch:0, lr 0.001 ----------  15.July 04:19:31
+begin train(), train_loader  len:75
+Conda uses environments to load different sets of Python packages
+type conda env list to see the environments availible.
+
++-------------------------------------------------------+
+Initializing TSN with 
+               base model:  BNInception
+Configurations:  
+           input_modality:  Flow
+             num_segments:  8
+               new_length:  5
+         consensus_module:  TRN
+            dropout_ratio:  0.8
+feature_dim(for fc_layer):  1024
+ img_feature_dim（[M]TRN):  256
+          before_softmax:  True
++-------------------------------------------------------+
+            
+Converting the ImageNet model to a flow init model
+Done. Flow model ready...
+we have 2 GPUs found
+  
++-------------------------------------------------------+
+               num_class : 8
+                modality : Flow
+              base_model : BNInception
+              new_length : 5
+          consensus_type : TRN
+         img_feature_dim : 256
+
+                  resume : 
+                  epochs : 2
+             start_epoch : 0
+                      lr : 0.001
+               loss_type : nll
+            weight_decay : 0.0005
+                lr_steps : [30, 60]
+                momentum : 0.9
+              partial_bn : False
+           clip_gradient : 20
+                 dropout : 0.8
+
+              batch_size : 64
+                 workers : 8
+                    gpus : None
+               eval_freq : 1
+              print_freq : 1
++-------------------------------------------------------+
+construct a network named : TRN_epic_Flow_BNInception_TRN_segment8
+******************** TSN parameters:
+<class 'torch.nn.parallel.data_parallel.DataParallel'> has no len() mothod
+-------------------- 230 layers (71 ConvNets) ,Total number of parameters: 35,674,447
+------------------------------
+group: first_conv_weight has 1 params, lr_mult: 5, decay_mult: 1
+group: first_conv_bias has 1 params, lr_mult: 10, decay_mult: 0
+group: normal_weight has 71 params, lr_mult: 1, decay_mult: 1
+group: normal_bias has 71 params, lr_mult: 2, decay_mult: 0
+group: BN scale/shift has 138 params, lr_mult: 1, decay_mult: 0
+******************** count from policies, total parameters: 11,607,784
+TRN initialised 
+
+evalutate= None
+======batch_size= 64
+-------------------- 4762 actions to go...
+-------------------- 1586 actions to go...
+
+ ---------- epoch:0, lr 0.001 ----------  15.July 11:30:51
+begin train(), train_loader  len:75
+Conda uses environments to load different sets of Python packages
+type conda env list to see the environments availible.
+
++-------------------------------------------------------+
+Initializing TSN with 
+               base model:  BNInception
+Configurations:  
+           input_modality:  RGB
+             num_segments:  8
+               new_length:  1
+         consensus_module:  TRN
+            dropout_ratio:  0.8
+feature_dim(for fc_layer):  1024
+ img_feature_dim（[M]TRN):  256
+          before_softmax:  True
++-------------------------------------------------------+
+            
+we have 1 GPUs found
+  
++-------------------------------------------------------+
+               num_class : 8
+                modality : RGB
+              base_model : BNInception
+              new_length : 1
+          consensus_type : TRN
+         img_feature_dim : 256
+
+                  resume : 
+                  epochs : 2
+             start_epoch : 0
+                      lr : 0.001
+               loss_type : nll
+            weight_decay : 0.0005
+                lr_steps : [30, 60]
+                momentum : 0.9
+              partial_bn : False
+           clip_gradient : 20
+                 dropout : 0.8
+
+              batch_size : 64
+                 workers : 8
+                    gpus : None
+               eval_freq : 1
+              print_freq : 1
++-------------------------------------------------------+
+construct a network named : TRN_epic_RGB_BNInception_TRN_segment8
+******************** TSN parameters:
+<class 'torch.nn.parallel.data_parallel.DataParallel'> has no len() mothod
+-------------------- 230 layers (71 ConvNets) ,Total number of parameters: 35,608,591
+------------------------------
+group: first_conv_weight has 1 params, lr_mult: 1, decay_mult: 1
+group: first_conv_bias has 1 params, lr_mult: 2, decay_mult: 0
+group: normal_weight has 71 params, lr_mult: 1, decay_mult: 1
+group: normal_bias has 71 params, lr_mult: 2, decay_mult: 0
+group: BN scale/shift has 138 params, lr_mult: 1, decay_mult: 0
+******************** count from policies, total parameters: 11,585,832
+TRN initialised 
+
+evalutate= None
+======batch_size= 64
+-------------------- 4762 actions to go...
+-------------------- 1586 actions to go...
+
+ ---------- epoch:0, lr 0.001 ----------  15.July 11:33:49
+begin train(), train_loader  len:75
+Traceback (most recent call last):
+  File "main.py", line 84, in <module>
+    main()
+  File "main.py", line 81, in main
+    trnmodel.do_training( ifprint= args.print_training_in_terminal)
+  File "/data/acq18jg/Code/TRN-pytorch/main.py", line 366, in do_training
+    tr_loss= self.train(train_loader,  model, self.criterion, optimizer, epoch, self.log_training, ifprint)
+  File "/data/acq18jg/Code/TRN-pytorch/main.py", line 417, in train
+    for i, (input, target) in enumerate(train_loader):
+  File "/home/acq18jg/.conda/envs/jupyter-spark/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 345, in __next__
+    data = self._next_data()
+  File "/home/acq18jg/.conda/envs/jupyter-spark/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 856, in _next_data
+    return self._process_data(data)
+  File "/home/acq18jg/.conda/envs/jupyter-spark/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 881, in _process_data
+    data.reraise()
+  File "/home/acq18jg/.conda/envs/jupyter-spark/lib/python3.6/site-packages/torch/_utils.py", line 394, in reraise
+    raise self.exc_type(msg)
+FileNotFoundError: Caught FileNotFoundError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/acq18jg/.conda/envs/jupyter-spark/lib/python3.6/site-packages/torch/utils/data/_utils/worker.py", line 178, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/acq18jg/.conda/envs/jupyter-spark/lib/python3.6/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/acq18jg/.conda/envs/jupyter-spark/lib/python3.6/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/data/acq18jg/Code/TRN-pytorch/tools.py", line 498, in __getitem__
+    printsummary = self.printsummary
+  File "/data/acq18jg/Code/TRN-pytorch/tools.py", line 378, in __call__
+    with tarfile.open(tarpath) as tar:
+  File "/home/acq18jg/.conda/envs/jupyter-spark/lib/python3.6/tarfile.py", line 1569, in open
+    return func(name, "r", fileobj, **kwargs)
+  File "/home/acq18jg/.conda/envs/jupyter-spark/lib/python3.6/tarfile.py", line 1634, in gzopen
+    fileobj = gzip.GzipFile(name, mode + "b", compresslevel, fileobj)
+  File "/home/acq18jg/.conda/envs/jupyter-spark/lib/python3.6/gzip.py", line 163, in __init__
+    fileobj = self.myfileobj = builtins.open(filename, mode or 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/fastdata/acq18jg/epic/frames_rgb_flow/rgb/train/P01/P01_18.tar'
+

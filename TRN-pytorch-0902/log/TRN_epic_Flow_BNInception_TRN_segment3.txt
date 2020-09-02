@@ -1,0 +1,2 @@
+initial logfile.  12.July 22:39:16 
+Start Training 1epochs (start from epoch 0) at:  12.July 22:39:16

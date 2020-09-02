@@ -1,0 +1,12 @@
+【Epoch】: [0][batch0/15], lr: 0.00100	Time 4.711 (avg:4.711)	Data 0.000 (0.000)	Loss 4.8375 (4.8375)	Prec@1 0.000 (0.000)	Prec@5 0.000 (0.000)
+index=5 ([0, 15, 4]), validating Results: Prec@1 0.000( best:0.000 ) Prec@5 0.000 Loss 4.82445
+index=10 ([0, 15, 9]), validating Results: Prec@1 0.000( best:0.000 ) Prec@5 33.333 Loss 4.76843
+index=15 ([0, 15, 14]), validating Results: Prec@1 33.333( best:0.000 ) Prec@5 66.667 Loss 4.59316
+【Epoch】: [1][batch0/15], lr: 0.00100	Time 0.385 (avg:0.385)	Data 0.000 (0.000)	Loss 4.5682 (4.5682)	Prec@1 60.000 (60.000)	Prec@5 80.000 (80.000)
+index=20 ([1, 15, 4]), validating Results: Prec@1 33.333( best:33.333 ) Prec@5 66.667 Loss 4.27324
+index=25 ([1, 15, 9]), validating Results: Prec@1 33.333( best:33.333 ) Prec@5 66.667 Loss 4.02618
+index=30 ([1, 15, 14]), validating Results: Prec@1 33.333( best:33.333 ) Prec@5 66.667 Loss 5.16526
+【Epoch】: [2][batch0/15], lr: 0.00100	Time 0.427 (avg:0.427)	Data 0.000 (0.000)	Loss 3.0577 (3.0577)	Prec@1 20.000 (20.000)	Prec@5 100.000 (100.000)
+index=35 ([2, 15, 4]), validating Results: Prec@1 0.000( best:33.333 ) Prec@5 66.667 Loss 5.12353
+index=40 ([2, 15, 9]), validating Results: Prec@1 33.333( best:33.333 ) Prec@5 66.667 Loss 3.12064
+index=45 ([2, 15, 14]), validating Results: Prec@1 0.000( best:33.333 ) Prec@5 66.667 Loss 5.19952

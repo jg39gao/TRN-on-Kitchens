@@ -1,0 +1,8 @@
+initial logfile.  11.July 22:53:16 
+Start Training 2epochs (start from epoch 0) at:  11.July 22:53:16
+epoch:  0  , batch:  0 /2, lr: 0.00100, time(min): 1.3, loss: 2.0995, prec1: 4.69, prec5: 50.00
+epoch:  0  , batch:  1 /2, lr: 0.00100, time(min): 1.4, loss: 2.0993, prec1: 0.00, prec5: 25.00
+------------------------------------------------------------(epoch0), validatingResults: time(min): 0.0,  Loss 2.09249, Prec1 0.000( best:0.000 ), Prec5 33.333
+epoch:  1  , batch:  0 /2, lr: 0.00100, time(min): 1.1, loss: 2.0995, prec1: 6.25, prec5: 43.75
+epoch:  1  , batch:  1 /2, lr: 0.00100, time(min): 1.1, loss: 2.0967, prec1: 0.00, prec5: 37.50
+------------------------------------------------------------(epoch1), validatingResults: time(min): 0.0,  Loss 2.09087, Prec1 0.000( best:0.000 ), Prec5 33.333

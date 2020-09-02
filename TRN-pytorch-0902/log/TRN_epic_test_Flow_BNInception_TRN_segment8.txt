@@ -1,0 +1,14 @@
+initial logfile.  23.July 08:55:03 
+Start Training 2epochs (start from epoch 0) at:  23.July 08:55:03
+epoch:  0  , batch:  0 /5, lr: 0.00100, time(min): 0.9, loss: 2.0959, prec1: 0.00, prec5: 18.75
+epoch:  0  , batch:  1 /5, lr: 0.00100, time(min): 0.9, loss: 2.0875, prec1: 6.25, prec5: 43.75
+epoch:  0  , batch:  2 /5, lr: 0.00100, time(min): 1.2, loss: 2.0828, prec1: 6.25, prec5: 50.00
+epoch:  0  , batch:  3 /5, lr: 0.00100, time(min): 1.2, loss: 2.0853, prec1: 0.00, prec5: 43.75
+epoch:  0  , batch:  4 /5, lr: 0.00100, time(min): 1.5, loss: 2.0732, prec1: 12.50, prec5: 87.50
+------------------------------------------------------------(epoch0), validatingResults: time(min): 0.1,  Loss 2.08270, Prec1 0.000( best:0.000 ), Prec5 66.667
+epoch:  1  , batch:  0 /5, lr: 0.00100, time(min): 0.5, loss: 2.0783, prec1: 12.50, prec5: 68.75
+epoch:  1  , batch:  1 /5, lr: 0.00100, time(min): 0.5, loss: 2.0737, prec1: 6.25, prec5: 100.00
+epoch:  1  , batch:  2 /5, lr: 0.00100, time(min): 1.0, loss: 2.0697, prec1: 31.25, prec5: 81.25
+epoch:  1  , batch:  3 /5, lr: 0.00100, time(min): 1.1, loss: 2.0561, prec1: 31.25, prec5: 93.75
+epoch:  1  , batch:  4 /5, lr: 0.00100, time(min): 1.2, loss: 2.0471, prec1: 50.00, prec5: 100.00
+------------------------------------------------------------(epoch1), validatingResults: time(min): 0.0,  Loss 2.07434, Prec1 33.333( best:0.000 ), Prec5 66.667

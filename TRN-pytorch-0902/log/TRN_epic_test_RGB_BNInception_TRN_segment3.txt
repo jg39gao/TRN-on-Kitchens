@@ -1,0 +1,22 @@
+initial logfile.  14.July 21:23:55 
+Start Training 2epochs (start from epoch 0) at:  14.July 21:23:55
+epoch:  0  , batch:  0 /9, lr: 0.00100, time(min): 0.4, loss: 2.1076, prec1: 0.00, prec5: 12.50
+epoch:  0  , batch:  1 /9, lr: 0.00100, time(min): 0.4, loss: 2.1029, prec1: 0.00, prec5: 37.50
+epoch:  0  , batch:  2 /9, lr: 0.00100, time(min): 0.6, loss: 2.0964, prec1: 0.00, prec5: 50.00
+epoch:  0  , batch:  3 /9, lr: 0.00100, time(min): 0.6, loss: 2.0927, prec1: 0.00, prec5: 62.50
+epoch:  0  , batch:  4 /9, lr: 0.00100, time(min): 0.9, loss: 2.0971, prec1: 0.00, prec5: 25.00
+epoch:  0  , batch:  5 /9, lr: 0.00100, time(min): 0.9, loss: 2.0901, prec1: 0.00, prec5: 25.00
+epoch:  0  , batch:  6 /9, lr: 0.00100, time(min): 1.0, loss: 2.0949, prec1: 0.00, prec5: 12.50
+epoch:  0  , batch:  7 /9, lr: 0.00100, time(min): 1.0, loss: 2.0856, prec1: 0.00, prec5: 37.50
+epoch:  0  , batch:  8 /9, lr: 0.00100, time(min): 1.1, loss: 2.0705, prec1: 0.00, prec5: 75.00
+------------------------------------------------------------(epoch0), validatingResults: time(min): 0.0,  Loss 2.09459, Prec1 0.000( best:0.000 ), Prec5 33.333
+epoch:  1  , batch:  0 /9, lr: 0.00100, time(min): 0.3, loss: 2.0719, prec1: 62.50, prec5: 75.00
+epoch:  1  , batch:  1 /9, lr: 0.00100, time(min): 0.3, loss: 2.0628, prec1: 12.50, prec5: 100.00
+epoch:  1  , batch:  2 /9, lr: 0.00100, time(min): 0.5, loss: 2.0639, prec1: 37.50, prec5: 87.50
+epoch:  1  , batch:  3 /9, lr: 0.00100, time(min): 0.5, loss: 2.0545, prec1: 25.00, prec5: 87.50
+epoch:  1  , batch:  4 /9, lr: 0.00100, time(min): 0.7, loss: 2.0457, prec1: 37.50, prec5: 87.50
+epoch:  1  , batch:  5 /9, lr: 0.00100, time(min): 0.8, loss: 2.0178, prec1: 50.00, prec5: 100.00
+epoch:  1  , batch:  6 /9, lr: 0.00100, time(min): 0.9, loss: 2.0288, prec1: 37.50, prec5: 75.00
+epoch:  1  , batch:  7 /9, lr: 0.00100, time(min): 0.9, loss: 2.0132, prec1: 25.00, prec5: 100.00
+epoch:  1  , batch:  8 /9, lr: 0.00100, time(min): 1.1, loss: 1.9768, prec1: 37.50, prec5: 100.00
+------------------------------------------------------------(epoch1), validatingResults: time(min): 0.0,  Loss 2.05792, Prec1 33.333( best:0.000 ), Prec5 66.667

@@ -1,0 +1,28 @@
+initial logfile.  01.August 17:16:20 
+Start Training 2epochs (start from epoch 0) at:  01.August 17:16:20
+epoch:  0  , batch:  0 /12, lr: 0.00010, time(min): 0.4, loss: 2.0871, prec1: 16.67, prec5: 33.33
+epoch:  0  , batch:  1 /12, lr: 0.00010, time(min): 0.5, loss: 2.0990, prec1: 0.00, prec5: 50.00
+epoch:  0  , batch:  2 /12, lr: 0.00010, time(min): 0.5, loss: 2.0900, prec1: 16.67, prec5: 50.00
+epoch:  0  , batch:  3 /12, lr: 0.00010, time(min): 0.6, loss: 2.0868, prec1: 16.67, prec5: 33.33
+epoch:  0  , batch:  4 /12, lr: 0.00010, time(min): 0.6, loss: 2.1063, prec1: 0.00, prec5: 33.33
+epoch:  0  , batch:  5 /12, lr: 0.00010, time(min): 0.7, loss: 2.0999, prec1: 0.00, prec5: 50.00
+epoch:  0  , batch:  6 /12, lr: 0.00010, time(min): 0.9, loss: 2.0997, prec1: 0.00, prec5: 50.00
+epoch:  0  , batch:  7 /12, lr: 0.00010, time(min): 0.9, loss: 2.0893, prec1: 16.67, prec5: 50.00
+epoch:  0  , batch:  8 /12, lr: 0.00010, time(min): 1.1, loss: 2.0912, prec1: 0.00, prec5: 50.00
+epoch:  0  , batch:  9 /12, lr: 0.00010, time(min): 1.1, loss: 2.0858, prec1: 16.67, prec5: 50.00
+epoch:  0  , batch: 10 /12, lr: 0.00010, time(min): 1.2, loss: 2.0706, prec1: 33.33, prec5: 66.67
+epoch:  0  , batch: 11 /12, lr: 0.00010, time(min): 1.2, loss: 2.0982, prec1: 0.00, prec5: 33.33
+------------------------------------------------------------(epoch0), validatingResults: time(min): 111.5,  Loss 2.08468, Prec1 11.665( best:0.000 ), Prec5 55.612
+epoch:  1  , batch:  0 /12, lr: 0.00010, time(min): 0.2, loss: 2.0854, prec1: 16.67, prec5: 50.00
+epoch:  1  , batch:  1 /12, lr: 0.00010, time(min): 0.2, loss: 2.0747, prec1: 33.33, prec5: 66.67
+epoch:  1  , batch:  2 /12, lr: 0.00010, time(min): 0.4, loss: 2.0863, prec1: 0.00, prec5: 100.00
+epoch:  1  , batch:  3 /12, lr: 0.00010, time(min): 0.4, loss: 2.0839, prec1: 16.67, prec5: 50.00
+epoch:  1  , batch:  4 /12, lr: 0.00010, time(min): 0.6, loss: 2.0955, prec1: 0.00, prec5: 50.00
+epoch:  1  , batch:  5 /12, lr: 0.00010, time(min): 0.6, loss: 2.0890, prec1: 16.67, prec5: 16.67
+epoch:  1  , batch:  6 /12, lr: 0.00010, time(min): 0.7, loss: 2.0941, prec1: 0.00, prec5: 66.67
+epoch:  1  , batch:  7 /12, lr: 0.00010, time(min): 0.7, loss: 2.0917, prec1: 0.00, prec5: 33.33
+epoch:  1  , batch:  8 /12, lr: 0.00010, time(min): 0.9, loss: 2.0651, prec1: 33.33, prec5: 83.33
+epoch:  1  , batch:  9 /12, lr: 0.00010, time(min): 1.0, loss: 2.0900, prec1: 0.00, prec5: 83.33
+epoch:  1  , batch: 10 /12, lr: 0.00010, time(min): 1.1, loss: 2.0886, prec1: 0.00, prec5: 66.67
+epoch:  1  , batch: 11 /12, lr: 0.00010, time(min): 1.1, loss: 2.0768, prec1: 16.67, prec5: 50.00
+------------------------------------------------------------(epoch1), validatingResults: time(min): 109.5,  Loss 2.07894, Prec1 11.665( best:11.665 ), Prec5 71.753
